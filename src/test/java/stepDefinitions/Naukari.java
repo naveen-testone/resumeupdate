@@ -37,25 +37,6 @@ public class Naukari extends Base{
 	    public void user_is_on_naukari_landing_page_something(String url) throws Exception  {
 		  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 		  driver.get(url);
-		  /*
-		  Robot robot= new Robot();
-		  Thread.sleep(5000);
-		  robot.keyPress(KeyEvent.VK_ALT);
-		  robot.keyPress(KeyEvent.VK_CONTROL);
-		  robot.keyPress(KeyEvent.VK_TAB);
-		  //robot.keyRelease(KeyEvent.VK_TAB);
-		  robot.keyPress(KeyEvent.VK_TAB);
-		  //robot.keyRelease(KeyEvent.VK_TAB);
-		  robot.keyPress(KeyEvent.VK_TAB);
-		  robot.keyRelease(KeyEvent.VK_TAB);
-		  robot.keyRelease(KeyEvent.VK_ALT);
-		  robot.keyRelease(KeyEvent.VK_CONTROL);
-		  Thread.sleep(5000);
-		  robot.keyPress(KeyEvent.VK_ENTER);
-		  robot.keyRelease(KeyEvent.VK_ENTER);
-		 //Thread.sleep(5000);
-		  driver.manage().window().maximize();
-		  */
 		  NaukariLocators nl=new NaukariLocators(driver);
 		 if(nl.getLaterButton().getText().equalsIgnoreCase("Later")) {
 			  nl.getLaterButton().click();
@@ -114,9 +95,6 @@ public class Naukari extends Base{
 	    public void click_on_upload_resume() throws Exception {
 	    	NaukariLocators nl=new NaukariLocators(driver);
 	    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-	    	//WebDriverWait wait = new WebDriverWait(driver,30);
-	    	//nl.getUpdateResumeButton().click();
-	    	//driver.findElement(By.id("attachCV")).click();
 	    	Actions a= new Actions(driver);
 	    	a.moveToElement(nl.getUpdateResumeButton()).click().perform();
 	    	Thread.sleep(5000);
@@ -127,7 +105,7 @@ public class Naukari extends Base{
 	    public void check_for_success_message()  {
 	    	NaukariLocators nl=new NaukariLocators(driver);
 	    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-	    	//System.out.println(nl.resUpSusMeg().getText());
+	    	System.out.println(nl.resUpSusMeg().getText());
 	    }
 
 	    @And("^click on logout$")
