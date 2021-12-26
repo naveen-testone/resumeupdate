@@ -1,29 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 3s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">User login into application with &quot;naveenallu1729@gmail.com&quot; and &quot;n@v33n4848&quot; (PASSED : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Home page is populated (PASSED : 12s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">click on Delete resume (PASSED : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 1s)</div>]]>
+      <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 2s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
@@ -38,28 +17,49 @@
       <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
     </line>
     <line>
+      <![CDATA[<div "result">click on Delete resume (FAILED : 10s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click on logout (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 13s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User login into application with &quot;naveenallu1729@gmail.com&quot; and &quot;n@v33n4848&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Home page is populated (PASSED : 10s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
+    </line>
+    <line>
       <![CDATA[<div "result">click on Upload resume (PASSED : 5s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Check for success message (PASSED : 1s)</div>]]>
+      <![CDATA[<div "result">Check for success message (PASSED : 0s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-12-24T03:00:04Z" name="Suite" finished-at="2021-12-24T03:01:07Z" duration-ms="62901">
+  <suite started-at="2021-12-26T17:19:57Z" name="Default suite" finished-at="2021-12-26T17:21:06Z" duration-ms="69468">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-12-24T03:00:04Z" name="Test" finished-at="2021-12-24T03:01:07Z" duration-ms="62901">
+    <test started-at="2021-12-26T17:19:57Z" name="Default test" finished-at="2021-12-26T17:21:06Z" duration-ms="69468">
       <class name="cucumberOptions.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-24T08:30:04Z" name="setUpClass" finished-at="2021-12-24T08:30:04Z" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-26T22:49:57Z" name="setUpClass" finished-at="2021-12-26T22:49:57Z" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-24T08:30:04Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-24T08:30:34Z" duration-ms="30165" status="PASS">
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-26T22:49:57Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-26T22:50:33Z" duration-ms="36178" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -72,9 +72,53 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='DELETE RESUME']"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-1LKOS4U', ip: '192.168.100.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9755b9f58d422011bef7db0270c561e6, findElement {using=xpath, value=//*[text()='DELETE RESUME']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56773/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9755b9f58d422011bef7db0270c561e6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='DELETE RESUME']"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-1LKOS4U', ip: '192.168.100.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9755b9f58d422011bef7db0270c561e6, findElement {using=xpath, value=//*[text()='DELETE RESUME']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56773/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9755b9f58d422011bef7db0270c561e6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pageObjects.NaukariLocators.getDeleteResume(NaukariLocators.java:54)
+	at stepDefinitions.Naukari.click_on_delete_resume(Naukari.java:109)
+	at ✽.click on Delete resume(src/test/java/features/naukariupdate.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 3s)</div>]]>
+              <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 2s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
@@ -83,20 +127,20 @@
               <![CDATA[<div "result">User login into application with &quot;naveenallu1729@gmail.com&quot; and &quot;n@v33n4848&quot; (PASSED : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Home page is populated (PASSED : 12s)</div>]]>
+              <![CDATA[<div "result">Home page is populated (PASSED : 10s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">click on Delete resume (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">click on Delete resume (FAILED : 10s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">click on logout (SKIPPED)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-24T08:30:34Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-24T08:31:06Z" duration-ms="32131" status="PASS">
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-26T22:50:33Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-26T22:51:06Z" duration-ms="33013" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,7 +158,7 @@
               <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 1s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
+              <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 13s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">User login into application with &quot;naveenallu1729@gmail.com&quot; and &quot;n@v33n4848&quot; (PASSED : 0s)</div>]]>
@@ -129,18 +173,18 @@
               <![CDATA[<div "result">click on Upload resume (PASSED : 5s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Check for success message (PASSED : 1s)</div>]]>
+              <![CDATA[<div "result">Check for success message (PASSED : 0s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-24T08:31:06Z" name="tearDownClass" finished-at="2021-12-24T08:31:07Z" duration-ms="312" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-26T22:51:06Z" name="tearDownClass" finished-at="2021-12-26T22:51:06Z" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- cucumberOptions.TestRunner -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

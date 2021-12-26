@@ -127,7 +127,7 @@ public class Naukari extends Base{
 	    public void check_for_success_message()  {
 	    	NaukariLocators nl=new NaukariLocators(driver);
 	    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-	    	System.out.println(nl.resUpSusMeg().getText());
+	    	//System.out.println(nl.resUpSusMeg().getText());
 	    }
 
 	    @And("^click on logout$")
