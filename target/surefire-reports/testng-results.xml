@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User login into application with &quot;naveenallu1729@gmail.com&quot; and &quot;n@v33n4848&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Home page is populated (PASSED : 10s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click on Delete resume (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User login into application with &quot;naveenallu1729@gmail.com&quot; and &quot;n@v33n4848&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Home page is populated (PASSED : 10s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click on Upload resume (PASSED : 5s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Check for success message (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="59010" started-at="2021-12-24T03:14:12Z" finished-at="2021-12-24T03:15:11Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@5ca609]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="59010" started-at="2021-12-24T03:14:12Z" finished-at="2021-12-24T03:15:11Z">
+      <class name="cucumberOptions.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@5ca609]" name="setUpClass" is-config="true" duration-ms="226" started-at="2021-12-24T08:44:12Z" finished-at="2021-12-24T08:44:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@5ca609]" name="runScenario" duration-ms="27532" started-at="2021-12-24T08:44:12Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-24T08:44:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Naukari update resume with delete"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Naukari Application login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User login into application with &quot;naveenallu1729@gmail.com&quot; and &quot;n@v33n4848&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Home page is populated (PASSED : 10s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">click on Delete resume (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@5ca609]" name="runScenario" duration-ms="31220" started-at="2021-12-24T08:44:40Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-24T08:45:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Naukari update resume without delete home page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Naukari Application login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User login into application with &quot;naveenallu1729@gmail.com&quot; and &quot;n@v33n4848&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Home page is populated (PASSED : 10s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">click on Upload resume (PASSED : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Check for success message (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@5ca609]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2021-12-24T08:45:11Z" finished-at="2021-12-24T08:45:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
