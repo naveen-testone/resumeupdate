@@ -41,8 +41,8 @@ public class NaukariLocators {
 	public WebElement getLoginButton() {
 		return driver.findElement(loginButton);
 	}
-	public WebElement getLaterButton() {
-		return driver.findElement(laterButton);
+	public List<WebElement> getLaterButton() {
+		return driver.findElements(laterButton);
 	}
 	public List<WebElement> getchatBotcrossButton() {
 		return driver.findElements(chtaBotCrossBar);

@@ -1,6 +1,8 @@
 package stepDefinitions;
 
 import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -38,8 +40,8 @@ public class Naukari extends Base{
 		  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 		  driver.get(url);
 		  NaukariLocators nl=new NaukariLocators(driver);
-		 if(nl.getLaterButton().getText().equalsIgnoreCase("Later")) {
-			  nl.getLaterButton().click();
+		 if(nl.getLaterButton().size()!=0) {
+			  nl.getLaterButton().get(0).click();
 		  }
 		  else {
 			  
@@ -67,7 +69,7 @@ public class Naukari extends Base{
 	    	NaukariLocators nl=new NaukariLocators(driver);
 	    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 	    	if(nl.getchatBotcrossButton().size()!=0) {
-	    	nl.getchatBotcrossButton().get(1).click();
+	    	nl.getchatBotcrossButton().get(0).click();
 	    	}
 	    	else
 	    	{
@@ -84,21 +86,45 @@ public class Naukari extends Base{
 	    }
 
 	    @And("^click on Delete resume$")
-	    public void click_on_delete_resume()  {
+	    public void click_on_delete_resume() throws Exception  {
 	    	NaukariLocators nl=new NaukariLocators(driver);
 	    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 	    	nl.getDeleteResume().click();
 	    	nl.getDeleteButton().click();
-	    }
-	    
+	    	Actions a= new Actions(driver);
+	    	a.moveToElement(nl.getUpdateResumeButton()).click().perform();
+	    	
+	    	//String filepath=System.getProperty("user.dir")+"\\src\\main\\java\\resources\\naveen.pdf";
+	    	//String autoITExecutable = System.getProperty("user.dir")+"\\src\\main\\java\\resources\\fileupload.exe";
+	    	/*
+	    	ProcessBuilder pb= new ProcessBuilder(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\fileupload.exe",filepath);
+	    	Thread.sleep(5000);
+	    	pb.start();
+	    	*/
+	    	//Runtime.getRuntime().exec(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\fileupload.exe");
+	    		    }
 	    @And("^click on Upload resume$")
 	    public void click_on_upload_resume() throws Exception {
 	    	NaukariLocators nl=new NaukariLocators(driver);
 	    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 	    	Actions a= new Actions(driver);
 	    	a.moveToElement(nl.getUpdateResumeButton()).click().perform();
-	    	Thread.sleep(5000);
-	    	Runtime.getRuntime().exec(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\fileupload.exe");
+	    	StringSelection ss = new StringSelection(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\naveen.pdf");
+	        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+
+	        //imitate mouse events like ENTER, CTRL+C, CTRL+V
+	        Robot robot = new Robot();
+	        robot.delay(90);
+	        robot.keyPress(KeyEvent.VK_ENTER);
+	        robot.keyRelease(KeyEvent.VK_ENTER);
+	        robot.keyPress(KeyEvent.VK_CONTROL);
+	        robot.keyPress(KeyEvent.VK_V);
+	        robot.keyRelease(KeyEvent.VK_V);
+	        robot.keyRelease(KeyEvent.VK_CONTROL);
+	        Thread.sleep(5000);
+	        robot.keyPress(KeyEvent.VK_ENTER);
+	        robot.delay(90);
+	        robot.keyRelease(KeyEvent.VK_ENTER);
 	    }
 
 	    @And("^Check for success message$")
