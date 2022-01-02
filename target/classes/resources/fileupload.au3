@@ -1,0 +1,6 @@
+ControlFocus("Open","","Edit1")
+ControlSetText("Open","","Edit1", @ScriptDir & "\naveen.pdf")
+Sleep(2000)
+ControlClick("Open","","Button1")
+Sleep(2000)
+ Send("{TAB}{ENTER}")

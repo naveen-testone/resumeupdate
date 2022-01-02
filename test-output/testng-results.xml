@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 2s)</div>]]>
+      <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
+      <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 14s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">User login into application with &quot;seleniumnaveen570@gmail.com&quot; and &quot;test@1234&quot; (PASSED : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Home page is populated (PASSED : 10s)</div>]]>
+      <![CDATA[<div "result">Home page is populated (PASSED : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">click on Update profile (PASSED : 33s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">click on Delete resume (PASSED : 2s)</div>]]>
+      <![CDATA[<div "result">click on Delete resume (FAILED : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">click on logout (SKIPPED)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
+      <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 13s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">User login into application with &quot;seleniumnaveen570@gmail.com&quot; and &quot;test@1234&quot; (PASSED : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Home page is populated (PASSED : 10s)</div>]]>
+      <![CDATA[<div "result">Home page is populated (PASSED : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">click on Update profile (PASSED : 1s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">click on Upload resume (PASSED : 5s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Check for success message (PASSED : 1s)</div>]]>
+      <![CDATA[<div "result">Check for success message (PASSED : 5s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-12-30T03:28:20Z" name="Suite" finished-at="2021-12-30T03:29:22Z" duration-ms="61871">
+  <suite started-at="2022-01-02T13:07:40Z" name="Suite" finished-at="2022-01-02T13:09:00Z" duration-ms="79832">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-12-30T03:28:20Z" name="Test" finished-at="2021-12-30T03:29:22Z" duration-ms="61871">
+    <test started-at="2022-01-02T13:07:40Z" name="Test" finished-at="2022-01-02T13:09:00Z" duration-ms="79832">
       <class name="cucumberOptions.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-30T08:58:20Z" name="setUpClass" finished-at="2021-12-30T08:58:21Z" duration-ms="254" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2022-01-02T18:37:40Z" name="setUpClass" finished-at="2022-01-02T18:37:41Z" duration-ms="202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-30T08:58:21Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-30T08:58:49Z" duration-ms="28770" status="PASS">
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2022-01-02T18:37:41Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-02T18:38:32Z" duration-ms="51120" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -72,31 +72,71 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable: [object HTMLButtonElement] has no size and location
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-1LKOS4U', ip: '10.81.234.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac65781abe10461eabd0aff36903e9e9, actions {actions=[org.openqa.selenium.interactions.Sequence@709f0202]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57495/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac65781abe10461eabd0aff36903e9e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLButtonElement] has no size and location
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-1LKOS4U', ip: '10.81.234.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac65781abe10461eabd0aff36903e9e9, actions {actions=[org.openqa.selenium.interactions.Sequence@709f0202]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57495/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac65781abe10461eabd0aff36903e9e9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:627)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:617)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:573)
+	at stepDefinitions.Naukari.click_on_delete_resume(Naukari.java:95)
+	at ✽.click on Delete resume(src/test/java/features/naukariupdate.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
             <line>
-              <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 2s)</div>]]>
+              <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 1s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
+              <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 14s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">User login into application with &quot;seleniumnaveen570@gmail.com&quot; and &quot;test@1234&quot; (PASSED : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Home page is populated (PASSED : 10s)</div>]]>
+              <![CDATA[<div "result">Home page is populated (PASSED : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">click on Update profile (PASSED : 33s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">click on Delete resume (PASSED : 2s)</div>]]>
+              <![CDATA[<div "result">click on Delete resume (FAILED : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">click on logout (SKIPPED)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-30T08:58:49Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-30T08:59:22Z" duration-ms="32799" status="PASS">
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2022-01-02T18:38:32Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-02T18:39:00Z" duration-ms="28463" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,29 +154,29 @@
               <![CDATA[<div "result">Initilize the browser with chrome (PASSED : 1s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div>]]>
+              <![CDATA[<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 13s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">User login into application with &quot;seleniumnaveen570@gmail.com&quot; and &quot;test@1234&quot; (PASSED : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Home page is populated (PASSED : 10s)</div>]]>
+              <![CDATA[<div "result">Home page is populated (PASSED : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">click on Update profile (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">click on Update profile (PASSED : 1s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">click on Upload resume (PASSED : 5s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Check for success message (PASSED : 1s)</div>]]>
+              <![CDATA[<div "result">Check for success message (PASSED : 5s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">click on logout (PASSED : 0s)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2021-12-30T08:59:22Z" name="tearDownClass" finished-at="2021-12-30T08:59:22Z" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@345f69f3]" started-at="2022-01-02T18:39:00Z" name="tearDownClass" finished-at="2022-01-02T18:39:00Z" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -22,7 +22,7 @@ public class NaukariLocators {
 	private By chtaBotCrossBar= By.xpath("//*[@id='_b2qrz85svNavbar']/div");
 	private By updateProfile=By.xpath("//*[text()='UPDATE PROFILE']");
 	private By deleteResume=By.xpath("//*[text()='DELETE RESUME']");
-	private By deleteButton=By.xpath("(//*[text()='DELETE'])[2]");
+	private By deleteButton=By.xpath("(//button[text()='DELETE'])[1]");
 	private By updateButton=By.id("attachCV");
 	private By resumeUploadSuccessMeaage=By.xpath("//*[contains(text(),'successfully uploaded')]");
 	

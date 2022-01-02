@@ -68,6 +68,7 @@ public class Naukari extends Base{
 	    	
 	    	NaukariLocators nl=new NaukariLocators(driver);
 	    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+	    	/*
 	    	if(nl.getchatBotcrossButton().size()!=0) {
 	    	nl.getchatBotcrossButton().get(0).click();
 	    	}
@@ -75,7 +76,7 @@ public class Naukari extends Base{
 	    	{
 	    		
 	    	}
-	 
+	    	*/
 	    }
 
 	    @And("^click on Update profile$")
@@ -90,14 +91,14 @@ public class Naukari extends Base{
 	    	NaukariLocators nl=new NaukariLocators(driver);
 	    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 	    	nl.getDeleteResume().click();
-	    	nl.getDeleteButton().click();
-	    	Actions a= new Actions(driver);
-	    	a.moveToElement(nl.getUpdateResumeButton()).click().perform();
+	    	Actions a= new Actions(driver);		
+	    	a.moveToElement(nl.getDeleteButton()).click().perform();;
+	    	//a.moveToElement(nl.getUpdateResumeButton()).click().perform();
 	    	
 	    	//String filepath=System.getProperty("user.dir")+"\\src\\main\\java\\resources\\naveen.pdf";
 	    	//String autoITExecutable = System.getProperty("user.dir")+"\\src\\main\\java\\resources\\fileupload.exe";
 	    	/*
-	    	ProcessBuilder pb= new ProcessBuilder(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\fileupload.exe",filepath);
+	    	ProcessBuilder pb= new ProcessBuilder(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\fileupload.exe");
 	    	Thread.sleep(5000);
 	    	pb.start();
 	    	*/
@@ -109,23 +110,10 @@ public class Naukari extends Base{
 	    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 	    	Actions a= new Actions(driver);
 	    	a.moveToElement(nl.getUpdateResumeButton()).click().perform();
-	    	StringSelection ss = new StringSelection(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\naveen.pdf");
-	        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-
-	        //imitate mouse events like ENTER, CTRL+C, CTRL+V
-	        Robot robot = new Robot();
-	        robot.delay(90);
-	        robot.keyPress(KeyEvent.VK_ENTER);
-	        robot.keyRelease(KeyEvent.VK_ENTER);
-	        robot.keyPress(KeyEvent.VK_CONTROL);
-	        robot.keyPress(KeyEvent.VK_V);
-	        robot.keyRelease(KeyEvent.VK_V);
-	        robot.keyRelease(KeyEvent.VK_CONTROL);
-	        Thread.sleep(5000);
-	        robot.keyPress(KeyEvent.VK_ENTER);
-	        robot.delay(90);
-	        robot.keyRelease(KeyEvent.VK_ENTER);
-	    }
+	    	ProcessBuilder pb= new ProcessBuilder(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\fileupload.exe");
+	    	Thread.sleep(5000);
+	    	pb.start();
+	    		    }
 
 	    @And("^Check for success message$")
 	    public void check_for_success_message()  {

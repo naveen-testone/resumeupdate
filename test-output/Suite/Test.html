@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 30 08:58:20 IST 2021</td>
+<td>Started on:</td><td>Sun Jan 02 18:37:40 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>61 seconds (61871 ms)</td>
+<tr><td>Total time:</td><td>79 seconds (79832 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -80,36 +80,90 @@ function toggleAllBoxes() {
 
 <a href="#Output-1659969211" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1659969211">
-<div "result">Initilize the browser with chrome (PASSED : 2s)</div><br/>
-<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div><br/>
+<div "result">Initilize the browser with chrome (PASSED : 1s)</div><br/>
+<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 14s)</div><br/>
 <div "result">User login into application with &quot;seleniumnaveen570@gmail.com&quot; and &quot;test@1234&quot; (PASSED : 0s)</div><br/>
-<div "result">Home page is populated (PASSED : 10s)</div><br/>
-<div "result">click on Update profile (PASSED : 0s)</div><br/>
-<div "result">click on Delete resume (PASSED : 2s)</div><br/>
+<div "result">Home page is populated (PASSED : 0s)</div><br/>
+<div "result">click on Update profile (PASSED : 33s)</div><br/>
+<div "result">click on Delete resume (FAILED : 0s)</div><br/>
+<div "result">click on logout (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLButtonElement] has no size and location
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-1LKOS4U&apos;, ip: &apos;10.81.234.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac65781abe10461eabd0aff36903e9e9, actions {actions=[org.openqa.selenium.interactions.Sequence@709f0202]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57495/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac65781abe10461eabd0aff36903e9e9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:627)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:617)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:573)
+	at stepDefinitions.Naukari.click_on_delete_resume(Naukari.java:95)
+	at ?.click on Delete resume(src/test/java/features/naukariupdate.feature:9)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1659969211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1659969211'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLButtonElement] has no size and location
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-1LKOS4U&apos;, ip: &apos;10.81.234.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac65781abe10461eabd0aff36903e9e9, actions {actions=[org.openqa.selenium.interactions.Sequence@709f0202]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57495/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac65781abe10461eabd0aff36903e9e9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:627)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:617)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:573)
+	at stepDefinitions.Naukari.click_on_delete_resume(Naukari.java:95)
+	at ?.click on Delete resume(src/test/java/features/naukariupdate.feature:9)
+</pre></div></td>
+<td>51</td>
+<td>cucumberOptions.TestRunner@345f69f3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Naukari update resume without delete home page", "Naukari Application login"<br/>
+<a href="#Output-1946904104" onClick='toggleBox("Output-1946904104", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1946904104" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1946904104">
+<div "result">Initilize the browser with chrome (PASSED : 1s)</div><br/>
+<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 13s)</div><br/>
+<div "result">User login into application with &quot;seleniumnaveen570@gmail.com&quot; and &quot;test@1234&quot; (PASSED : 0s)</div><br/>
+<div "result">Home page is populated (PASSED : 0s)</div><br/>
+<div "result">click on Update profile (PASSED : 1s)</div><br/>
+<div "result">click on Upload resume (PASSED : 5s)</div><br/>
+<div "result">Check for success message (PASSED : 5s)</div><br/>
 <div "result">click on logout (PASSED : 0s)</div><br/>
 </div>
 </td>
 <td></td>
 <td>28</td>
-<td>cucumberOptions.TestRunner@345f69f3</td></tr>
-<tr>
-<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Naukari update resume without delete home page", "Naukari Application login"<br/>
-<a href="#Output-690070378" onClick='toggleBox("Output-690070378", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-690070378" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-690070378">
-<div "result">Initilize the browser with chrome (PASSED : 1s)</div><br/>
-<div "result">User is on Naukari landing page &quot;https:&#x2F;&#x2F;www.naukri.com&#x2F;&quot; (PASSED : 12s)</div><br/>
-<div "result">User login into application with &quot;seleniumnaveen570@gmail.com&quot; and &quot;test@1234&quot; (PASSED : 0s)</div><br/>
-<div "result">Home page is populated (PASSED : 10s)</div><br/>
-<div "result">click on Update profile (PASSED : 0s)</div><br/>
-<div "result">click on Upload resume (PASSED : 5s)</div><br/>
-<div "result">Check for success message (PASSED : 1s)</div><br/>
-<div "result">click on logout (PASSED : 0s)</div><br/>
-</div>
-</td>
-<td></td>
-<td>32</td>
 <td>cucumberOptions.TestRunner@345f69f3</td></tr>
 </table><p>
 </body>
